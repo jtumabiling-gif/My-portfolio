@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Wyne A. Tumabiling — Web & Mobile Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home" class="nav-brand-link"><span class="logo-text">JWT</span></a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-circles" aria-hidden="true">
+            <span class="f-circle f1"></span>
+            <span class="f-circle f2"></span>
+            <span class="f-circle f3"></span>
+            <span class="f-circle f4"></span>
+            <span class="f-circle f5"></span>
+            <span class="f-circle f6"></span>
+        </div>
+        <div class="hero-content">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <span class="hero-eyebrow">
+                        <i class="fas fa-circle" style="font-size:0.5rem; color: #4ade80;"></i>
+                        Available for Work
+                    </span>
+                    <h1>I'm John Wyne</h1>
+                    <p class="hero-subtitle">Web & Mobile Developer</p>
+                    <p class="hero-description">
+                        I design beautifully simple things, and I love what I do.
+                    </p>
+                    <div class="hero-actions">
+                        <div class="hero-socials">
+                            <a href="https://www.facebook.com/jjjjwinestism" target="_blank" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/inewnhj/" target="_blank" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/jtumabiling-gif" target="_blank" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@jwinest?lang=en" target="_blank" title="TikTok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                        <a href="#about" class="cta-button">
+                            Learn More <i class="fas fa-arrow-down" style="font-size:0.8rem;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-figure">
+                    <img src="assets/img/i.png" alt="Portrait of John Wyne" class="hero-portrait"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/280?text=JW'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eco Ribbon -->
+    <div class="eco-ribbon" aria-hidden="true">
+        <div class="ribbon-inner">
+            <div class="ribbon-track">
+                <div class="ribbon-group">
+                    <div class="ribbon-text">Web &amp; Mobile Developer &nbsp;·&nbsp; UI/UX Design &nbsp;·&nbsp; React &amp; Flutter &nbsp;·&nbsp; API Integration &nbsp;·&nbsp; Open for Collaboration &nbsp;·&nbsp;</div>
+                    <div class="ribbon-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">API Integration</span>
+                    </div>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="ribbon-group">
+                    <div class="ribbon-text">Web &amp; Mobile Developer &nbsp;·&nbsp; UI/UX Design &nbsp;·&nbsp; React &amp; Flutter &nbsp;·&nbsp; API Integration &nbsp;·&nbsp; Open for Collaboration &nbsp;·&nbsp;</div>
+                    <div class="ribbon-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">API Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <span class="section-label">Who I Am</span>
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text reveal">
+                    <p>
+                        Hello! I'm John Wyne A. Tumabiling, a BSIT Student who loves and is eager to learn, with a deep passion for Web and Mobile Development. My journey began with a fascination for how design and coding intersect to create seamless digital experiences.
+                    </p>
+                    <p>
+                        My technical toolkit spans both frontend and backend development, including
+                        HTML, CSS, JavaScript, React, PHP, Python, and Flutter (Dart). I build complete,
+                        data-driven systems by integrating APIs, managing servers, and designing efficient
+                        data models with Firebase, MySQL, PostgreSQL, and SQLite.
+                    </p>
+                    <p>
+                        Whether it is a sleek user interface or a robust backend system, I am committed to delivering
+                        quality, secure, and functional solutions tailored to meet any need.
+                    </p>
+                </div>
+                <div class="skills reveal">
+                    <h3>Skills &amp; Technologies</h3>
+                    <!-- Stats card: Experiences / Projects / Clients -->
+                    <div class="stats-card" aria-hidden="false">
+                        <div class="stats-inner">
+                            <div class="stat">
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label">Experiences</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Projects Done</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Satisfied Clients</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">API Integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <span class="section-label">What I Offer</span>
+            <h2>I can help you with</h2>
+            <p class="services-intro">From concept to deployment solutions built for performance.</p>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Custom Web Applications</h3>
+                    <p>Building scalable, responsive web applications tailored to your specific business needs with modern technologies.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Cross-Platform Mobile Apps</h3>
+                    <p>Developing high-performance mobile applications for iOS and Android using Flutter and React Native.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3>Backend &amp; Database Integration</h3>
+                    <p>Designing robust backend systems and integrating complex databases with APIs for seamless data flow.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Responsive Layouts</h3>
+                    <p>Crafting aesthetically pleasing interfaces that provide seamless, captivating experiences across all screen sizes.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
+                    <h3>User-Centered Design</h3>
+                    <p>Blending creativity with technology to translate complex requirements into clean, interactive interfaces.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3>System Maintenance &amp; Support</h3>
+                    <p>Diagnosing, repairing, and optimizing hardware and software configurations for maximum performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <span class="section-label">My Work</span>
+            <h2>Projects</h2>
+            <p class="projects-subtitle">
+                This section showcase highlights my complete development journey from fundamental computer skills in my first year, to crafting responsive web designs in my second year, and finally advancing to complex, full-stack web and mobile applications in my third year.                
+            </p>
+
+            <!-- Project 1 -->
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img class="slider-img" src="./assets/img/1.jpg" alt="Gym Membership System"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/2.jpg" alt="Gym Membership System"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <h3>Gym Membership System — CRUD Application</h3>
+                        <div class="project-category">
+                            <span class="badge">Database Application</span>
+                            <span class="badge">CRUD Operations</span>
+                        </div>
+                    </div>
+                    <p>
+                        A comprehensive membership management system offering complete CRUD functionality for gym operations. Allows administrators to create and update member profiles, retrieve detailed membership information, and manage records efficiently.
+                    </p>
+                    <p class="tech-stack"><strong>Technologies:</strong> Database Design, CRUD Operations</p>
+                    <div class="project-action-box">
+                        <button class="next-button" type="button">
+                            <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i> Next Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img class="slider-img" src="./assets/img/qm1.jpg" alt="Quickmart Inventory System"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/qm2.jpg" alt="Quickmart"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/qm5.jpg" alt="Quickmart"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/qm3.jpg" alt="Quickmart"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/qm4.jpg" alt="Quickmart"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <h3>Quickmart Inventory Management System</h3>
+                        <div class="project-category">
+                            <span class="badge">Web Application</span>
+                            <span class="badge">UI/UX Design</span>
+                        </div>
+                    </div>
+                    <p>
+                        A comprehensive web-based inventory management system designed for convenience store operations. Handles inventory tracking, stock level monitoring, and demand forecasting for the Quickmart convenience store chain.
+                    </p>
+                    <p class="tech-stack"><strong>Technologies:</strong> HTML, CSS, UI Design Principles</p>
+                    <div class="project-action-box">
+                        <button class="next-button" type="button">
+                            <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i> Next Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img class="slider-img" src="./assets/img/mindayoblue1.jpg" alt="Mindayo Blue"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/mindayologin.jpg" alt="Mindayo Blue"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/mindayoregister.jpg" alt="Mindayo Blue"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/mindayoblue3.jpg" alt="Mindayo Blue"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/mindayoblue2.jpg" alt="Mindayo Blue"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">   
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <h3>Mindayo — Tourism Platform</h3>
+                        <div class="project-category">
+                            <span class="badge">Web Application</span>
+                            <span class="badge">Tourism</span>
+                        </div>
+                    </div>
+                    <p>
+                        A tourism platform designed to promote local destinations and attractions. Features an interactive interface for browsing places, events, and travel guides with a focus on local culture.
+                    </p>
+                    <p class="tech-stack"><strong>Technologies:</strong> Java, Jframe, MySQL, XAMPP</p>
+                    <div class="project-action-box">
+                        <button class="next-button" type="button">
+                            <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i> Next Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img class="slider-img" src="./assets/img/min2.jpg" alt="FABRIC: TEXMAP - Smart City Circular Economy Platform" onerror="this.onerror=null;this.src='https://via.placeholder.com/500x400?text=No+Image'">
+                        <img class="slider-img" src="./assets/img/min3.jpg" alt="FABRIC: TEXMAP - Smart City Circular Economy Platform" onerror="this.onerror=null;this.src='https://via.placeholder.com/500x400?text=No+Image'">
+                        <img class="slider-img" src="./assets/img/min4.jpg" alt="FABRIC: TEXMAP - Smart City Circular Economy Platform" onerror="this.onerror=null;this.src='https://via.placeholder.com/500x400?text=No+Image'">          
+                        <img class="slider-img" src="./assets/img/min1.jpg" alt="FABRIC: TEXMAP - Smart City Circular Economy Platform" onerror="this.onerror=null;this.src='https://via.placeholder.com/500x400?text=No+Image'">
+                    </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <h3>MINDAYO - Travel & Vacation Booking Platform</h3>
+                            <div class="project-category">
+                                <span class="badge">Full-Stack Web</span>
+                                <span class="badge">Database</span>
+                            </div>
+                        </div>
+                            <p>
+                                A full-stack web application for streamlined travel and vacation package reservations across Mindanao. Features personalized user booking management, administrative dashboard, secure user authentication, rapid destination search, and safe financial transactions.
+                            </p>
+                    <p class="tech-stack"><strong>Technologies:</strong> Laravel, MySQL, XAMPP, SQL Stored Procedures</p>
+                        <div class="project-action-box">
+                            <button class="next-button" type="button">
+                            <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i> Next Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img class="slider-img" src="./assets/img/arnoks1.png" alt="Cris-POS"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/arnoks2.png" alt="Cris-POS"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <h3>Cris-POS — Retail Management System</h3>
+                        <div class="project-category">
+                            <span class="badge">Mobile App</span>
+                            <span class="badge">Real-time Analytics</span>
+                        </div>
+                    </div>
+                    <p>
+                        A mobile Point of Sale and inventory system tailored for food service operations. Features intuitive order taking, a color-coded stock health monitor, dynamic categorical product filters, and real-time sales reporting.
+                    </p>
+                    <p class="tech-stack"><strong>Technologies:</strong> Flutter, Dart, Firebase Authentication, Cloud Firestore</p>
+                    <div class="project-action-box">
+                        <button class="next-button" type="button">
+                            <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i> Next Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img class="slider-img" src="./assets/img/PROMO WEBSITE.png" alt="FABRIC TEXMAP"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/fabric1.png" alt="FABRIC TEXMAP"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/fabric2.png" alt="FABRIC TEXMAP"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/US.jpg" alt="FABRIC TEXMAP"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <h3>FABRIC: TEXMAP — Smart City Platform</h3>
+                        <div class="project-category">
+                            <span class="badge">Full-Stack Mobile</span>
+                            <span class="badge">Marketplace</span>
+                        </div>
+                    </div>
+                    <p>
+                        A smart-city circular economy platform mapping Panabo City's textile and garment industry. Addresses access issues for over 2,000 DNSC students and discoverability gaps for local tailors via interactive mapping and marketplace tools.
+                    </p>
+                    <p class="tech-stack"><strong>Technologies:</strong> Full-stack Web/Mobile Development, Mapping APIs</p>
+                    <div class="project-action-box">
+                        <button class="next-button" type="button">
+                            <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i> Next Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <img class="slider-img" src="./assets/img/capstone6.png" alt="WharfIntel"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/capstone2.png" alt="WharfIntel"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/capstone3.png" alt="WharfIntel"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/capstone4.png" alt="WharfIntel"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/capstone5.png" alt="WharfIntel"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                    <img class="slider-img" src="./assets/img/capstone1.jpeg" alt="WharfIntel"
+                         onerror="this.onerror=null;this.src='https://via.placeholder.com/600x400?text=Project+Image'">
+                </div>
+                <div class="project-details">
+                    <div class="project-meta">
+                        <h3>WharfIntel — Maritime Logistics Simulator</h3>
+                        <div class="project-category">
+                            <span class="badge">Capstone Project</span>
+                            <span class="badge">Advanced Analytics</span>
+                        </div>
+                    </div>
+                    <p>
+                        An innovative 2D geo-spatial simulation training platform bridging maritime logistics theory with dynamic operational conditions. Provides a risk-free digital sandbox for students to study systemic impacts of port friction and optimize asset scheduling.
+                    </p>
+                    <p class="tech-stack"><strong>Technologies:</strong> React, Leaflet, Python FastAPI, Machine Learning</p>
+                    <div class="project-action-box">
+                        <button class="next-button" type="button">
+                            <i class="fas fa-arrow-right" style="font-size:0.75rem;"></i> Next Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Logo and Animation Section -->
+    <section id="logo-animation" class="logo-animation">
+        <div class="container">
+            <span class="section-label">Creative Work</span>
+            <h2>Logo &amp; Animation</h2>
+            <p class="outputs-subtitle">Logo and animation outputs from my second-year journey</p>
+            <div class="animation-grid">
+                <div class="animation-item reveal">
+                    <div class="animation-container logo-container">
+                        <svg viewBox="0 0 1320 300" xmlns="http://www.w3.org/2000/svg">
+                            <text x="50%" y="50%" dy=".35em" text-anchor="middle">FAITH</text>
+                        </svg>
+                    </div>
+                    <h3>Animated Text Logo</h3>
+                    <p>Dynamic SVG text animation with stroke effects and color transitions</p>
+                </div>
+                <div class="animation-item reveal">
+                    <div class="animation-container flower-container">
+                        <div class="container1">
+                            <div class="d1">
+                                <div class="div1" id="div1"></div>
+                                <div class="div2" id="div2"></div>
+                            </div>
+                            <div class="d2">
+                                <div class="div2" id="div3"></div>
+                                <div class="div1" id="div4"></div>
+                            </div>
+                        </div>
+                        <div id="mate"></div>
+                    </div>
+                    <h3>CSS Flower Animation</h3>
+                    <p>CSS 3D transforms and keyframe animations creating a dynamic flower effect</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HTML & CSS Outputs Section -->
+    <section id="outputs" class="outputs">
+        <div class="container">
+            <span class="section-label">Academic Work</span>
+            <h2>HTML &amp; CSS Outputs</h2>
+            <p class="outputs-subtitle">Web design and development samples from my second-year journey</p>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <img src="./assets/img/simplesample.jpg" alt="A Simple Sample Web Page">
+                    </div>
+                    <p class="gallery-label">A Simple Sample Web Page</p>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <img src="./assets/img/biodata.jpg" alt="Bio-Data Form">
+                    </div>
+                    <p class="gallery-label">Bio-Data Form</p>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <img src="./assets/img/htmltags.jpg" alt="HTML Tags Reference">
+                    </div>
+                    <p class="gallery-label">HTML Tags and Their Functions</p>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <img src="./assets/img/icon(jframe).jpg" alt="Icon Jframe">
+                    </div>
+                    <p class="gallery-label">Icon (JFrame)</p>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <img src="./assets/img/postcards.jpg" alt="Post-Cards">
+                    </div>
+                    <p class="gallery-label">Post-Cards</p>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-image">
+                        <img src="./assets/img/calcu.jpg" alt="Functional Calculator">
+                    </div>
+                    <p class="gallery-label">Functional Calculator (JFrame)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <span class="section-label">Let's Talk</span>
+            <h2>Get In Touch</h2>
+            <p class="contact-subtitle">Feel free to reach out for any inquiries or further information</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Connect With Me</h3>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p class="detail-label">Phone</p>
+                                <p><a href="tel:+639678529948">+63 (967) 852-9948</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p class="detail-label">Email</p>
+                                <p><a href="mailto:Jtumabiling@gmail.com">Jtumabiling@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/jjjjwinestism" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/inewnhj/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://github.com/jtumabiling-gif" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.tiktok.com/@jwinest?lang=en" target="_blank" class="social-link">
+                            <i class="fab fa-tiktok"></i>
+                            <span>TikTok</span>
+                        </a>
+                    </div>
+                    <div class="cv-download">
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <label for="cf-name">Full name <span class="required">*</span></label>
+                            <input id="cf-name" name="name" type="text" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="cf-email">Email <span class="required">*</span></label>
+                            <input id="cf-email" name="email" type="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="cf-phone">Phone</label>
+                            <input id="cf-phone" name="phone" type="tel" placeholder="Optional">
+                        </div>
+                        <div class="form-row">
+                            <label for="cf-message">Message <span class="required">*</span></label>
+                            <textarea id="cf-message" name="message" placeholder="Tell me about your project" required></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="submit-btn">Send Message</button>
+                            <p class="form-status" id="formStatus" aria-live="polite"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <h4 class="brand-title">John Wyne A. Tumabiling</h4>
+                    <p class="footer-desc">I am an BSIT Student who loves and is eager to learn, specializing in web and mobile development. Combining frontend design using React and Flutter with robust backend and database management, I build secure, data-driven, and API-integrated systems.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p class="footer-contact"><a href="mailto:Jtumabiling@gmail.com">Jtumabiling@gmail.com</a></p>
+                    <p class="footer-contact"><a href="tel:+639678529948">+63 (967) 852-9948</a></p>
+                    <p class="footer-contact">Panabo City, Davao del Norte, Philippines</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2026. All rights reserved.</p>
+                <p class="made-by">Designed &amp; developed by John Wyne A. Tumabiling</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Navbar scroll class
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        });
+
+        // Hamburger toggle
+        document.getElementById('hamburger').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+
+        // Project card image sliders
+        document.querySelectorAll('.project-card').forEach(card => {
+            const imgs = Array.from(card.querySelectorAll('.project-image .slider-img'));
+            if (imgs.length <= 1) return;
+            imgs.forEach((img, i) => { img.style.display = i === 0 ? 'block' : 'none'; });
+            let current = 0;
+            const btn = card.querySelector('.next-button, .project-next-btn');
+            if (!btn) return;
+            btn.addEventListener('click', () => {
+                imgs[current].style.display = 'none';
+                current = (current + 1) % imgs.length;
+                imgs[current].style.display = 'block';
+            });
+        });
+
+        // Scroll reveal — only activate hiding AFTER JS confirms observer is ready
+        if ('IntersectionObserver' in window) {
+            document.body.classList.add('js-reveal-ready');
+            const revealEls = document.querySelectorAll('.reveal');
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
+            // Small delay so page renders visible first, then observer kicks in
+            requestAnimationFrame(() => {
+                revealEls.forEach(el => revealObserver.observe(el));
+            });
+        }
+
+        // Download CV
+        const downloadBtn = document.querySelector('.download-btn');
+        if (downloadBtn) {
+            downloadBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Your CV will download soon.');
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Contact form handling (simple client-side send simulation)
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            const statusEl = document.getElementById('formStatus');
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const btn = contactForm.querySelector('.submit-btn');
+                const name = (contactForm.name.value || '').trim();
+                const email = (contactForm.email.value || '').trim();
+                const message = (contactForm.message.value || '').trim();
+                const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent') || '#3b82f6';
+                if (!name || !email || !message) {
+                    statusEl.textContent = 'Please complete all required fields.';
+                    statusEl.style.color = accent;
+                    return;
+                }
+                btn.disabled = true;
+                btn.textContent = 'Sending...';
+                statusEl.textContent = '';
+                // Simulate submit — replace this with real endpoint as needed
+                setTimeout(() => {
+                    btn.disabled = false;
+                    btn.textContent = 'Send Message';
+                    statusEl.style.color = accent;
+                    statusEl.textContent = 'Thanks — your message was sent. I will reply shortly.';
+                    contactForm.reset();
+                }, 900);
+            });
+        }
+    </script>
+</body>
+</html>
