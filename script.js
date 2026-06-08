@@ -17,6 +17,98 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
+// Footer resource modals (ensure handlers run early)
+document.querySelectorAll('.resource-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopImmediatePropagation && e.stopImmediatePropagation();
+        const id = this.dataset && this.dataset.modal;
+        if (!id) return;
+        const modal = document.getElementById(id);
+        if (!modal) return;
+        modal.classList.add('show');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('modal-open');
+        // after opening, sync accept button state and attach handlers
+        syncModalButtons(modal);
+    });
+});
+
+// Modal close handlers (overlay and close button)
+document.querySelectorAll('.modal').forEach(modal => {
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal || e.target.hasAttribute('data-close')) {
+            modal.classList.remove('show');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('modal-open');
+        }
+    });
+    const btn = modal.querySelector('.modal-close');
+    if (btn) btn.addEventListener('click', () => {
+        modal.classList.remove('show');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('modal-open');
+    });
+});
+
+// Sync modal buttons: initialize Accept disabled state, wire checkbox change and Cancel
+function syncModalButtons(modal) {
+    if (!modal) return;
+    try {
+        const body = modal.querySelector('.modal-body');
+        if (!body) return;
+        const checkbox = body.querySelector('input[type="checkbox"]');
+        // primary accept button by ID or fallback to last button in body
+        let acceptBtn = body.querySelector('button[id$="-accept-btn"]');
+        const buttons = Array.from(body.querySelectorAll('button'));
+        let cancelBtn = null;
+        if (buttons.length) {
+            // heuristic: first button is Cancel, last is Accept if acceptBtn not found
+            cancelBtn = buttons[0];
+            if (!acceptBtn && buttons.length > 1) acceptBtn = buttons[buttons.length - 1];
+        }
+
+        if (acceptBtn) {
+            // initialize disabled state
+            acceptBtn.disabled = !(checkbox && checkbox.checked);
+            // ensure readable cursor
+            acceptBtn.style.cursor = checkbox && checkbox.checked ? 'pointer' : 'not-allowed';
+            // attach change listener once
+            if (checkbox && !checkbox.dataset._bound) {
+                checkbox.addEventListener('change', () => {
+                    acceptBtn.disabled = !checkbox.checked;
+                    acceptBtn.style.cursor = checkbox.checked ? 'pointer' : 'not-allowed';
+                });
+                checkbox.dataset._bound = '1';
+            }
+            // Accept button closes modal when clicked (only when enabled)
+            if (!acceptBtn.dataset._closeBound) {
+                acceptBtn.addEventListener('click', (e) => {
+                    if (acceptBtn.disabled) return;
+                    modal.classList.remove('show');
+                    modal.setAttribute('aria-hidden', 'true');
+                    document.body.classList.remove('modal-open');
+                });
+                acceptBtn.dataset._closeBound = '1';
+            }
+        }
+
+        if (cancelBtn && !cancelBtn.dataset._cancelBound) {
+            cancelBtn.addEventListener('click', (e) => {
+                modal.classList.remove('show');
+                modal.setAttribute('aria-hidden', 'true');
+                document.body.classList.remove('modal-open');
+            });
+            cancelBtn.dataset._cancelBound = '1';
+        }
+    } catch (err) {
+        console.error('syncModalButtons error', err);
+    }
+}
+
+// Initialize existing modals on load (in case checkboxes are pre-checked)
+document.querySelectorAll('.modal').forEach(m => syncModalButtons(m));
+
 // Optional form submission handling if a contact form exists
 const contactForm = document.getElementById('contactForm');
 

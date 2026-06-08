@@ -40,6 +40,9 @@
             <span class="f-circle f4"></span>
             <span class="f-circle f5"></span>
             <span class="f-circle f6"></span>
+            <span class="f-circle f7"></span>
+            <span class="f-circle f8"></span>
+            <span class="f-circle f9"></span>
         </div>
         <div class="hero-content">
             <div class="hero-inner">
@@ -91,6 +94,7 @@
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                         <span class="tag">JavaScript</span>
+                        <span class="tag">Bootstrap</span>
                         <span class="tag">React</span>
                         <span class="tag">PHP</span>
                         <span class="tag">Python</span>
@@ -109,6 +113,7 @@
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                         <span class="tag">JavaScript</span>
+                        <span class="tag">Bootstrap</span>
                         <span class="tag">React</span>
                         <span class="tag">PHP</span>
                         <span class="tag">Python</span>
@@ -169,6 +174,7 @@
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                         <span class="tag">JavaScript</span>
+                        <span class="tag">Bootstrap</span>
                         <span class="tag">React</span>
                         <span class="tag">PHP</span>
                         <span class="tag">Python</span>
@@ -541,6 +547,49 @@
         </div>
     </section>
 
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <span class="section-label">Credentials</span>
+            <h2>Certifications</h2>
+            <p class="outputs-subtitle">Key Credentials & Achievements</p>
+            <div class="cert-grid">
+                <div class="cert-item reveal">
+                    <div class="cert-image">
+                        <img src="./assets/img/cert-wadhwani.jpg " alt="Certificate 1" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x260?text=Certificate+1'">
+                    </div>
+                    <p class="cert-label">Wadhwani Foundation </p>
+                        <p class="cert-description">Technopreneurship startup training.     
+                    </p>
+                    </p>
+                </div>
+                <div class="cert-item reveal">
+                    <div class="cert-image">
+                        <img src="./assets/img/cert-networking1.jpg" alt="Certificate 2" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x260?text=Certificate+2'">
+                    </div>
+                    <p class="cert-label">CCNA: Introduction to Networks
+                        <p class="cert-description">Foundational network<br>routing.</p>
+                    </p>
+                </div>
+                <div class="cert-item reveal">
+                    <div class="cert-image">
+                        <img src="./assets/img/cert-networking2.jpg" alt="Certificate 3" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x260?text=Certificate+3'">
+                    </div>
+                    <p class="cert-label">CCNA: SRWE
+                        <p class="cert-description">Advanced network configuration.</p>
+                    </p>
+                </div>
+                <div class="cert-item reveal">
+                    <div class="cert-image">
+                        <img src="./assets/img/cert-levelapp.png" alt="Certificate Placeholder" onerror="this.onerror=null;this.src='https://via.placeholder.com/400x260?text=No+Image'">
+                    </div>
+                    <p class="cert-label">Level App 3.0</p>
+                    <p class="cert-description">Completion of Level app 3.0 program.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -640,9 +689,9 @@
                 <div class="footer-col">
                     <h4>Resources</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#" class="resource-link" data-modal="modal-privacy">Privacy Policy</a></li>
+                        <li><a href="#" class="resource-link" data-modal="modal-terms">Terms of Service</a></li>
+                        <li><a href="#" class="resource-link" data-modal="modal-faq">FAQs</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -658,6 +707,132 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Modal markup for footer resources -->
+        <div id="modal-privacy" class="modal" aria-hidden="true">
+                <div class="modal-overlay" data-close></div>
+                <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-privacy-title">
+                        <button class="modal-close" aria-label="Close">&times;</button>
+                        <div class="modal-body">
+                                <div class="max-w-lg w-full rounded-xl bg-[#0b0f19] text-slate-300 p-6 border border-slate-800/80 shadow-xl">
+                                        <header class="mb-3">
+                                                <h3 id="modal-privacy-title" class="text-white text-sm font-semibold">Privacy Policy</h3>
+                                                <p class="text-xs text-slate-400">Please review how we collect and use data.</p>
+                                        </header>
+
+                                        <div class="policy-content max-h-56 overflow-y-auto text-sm text-slate-300 leading-relaxed p-3 bg-[#0f172a]/30 rounded-md border border-slate-800/50">
+                                                <p><strong>1. Information We Collect:</strong> We may collect personal information that you provide directly to us, such as your name, email address, and message details when you utilize our contact modules.</p>
+                                                <p><strong>2. How We Use Data:</strong> Your data is strictly used to handle direct inquiries, optimize application UI tracking, and analyze anonymous traffic metadata. We never sell or distribute your data.</p>
+                                                <p><strong>3. Secure Storage &amp; Encryption:</strong> All submitted data is encrypted in transit and at rest. We leverage industry-standard security models to protect data integrity.</p>
+                                                <p><strong>4. Third-Party Integrations:</strong> We use minimal analytics and respect Do Not Track requests; third-party integrations are limited and privacy-aware.</p>
+                                        </div>
+
+                                        <label class="flex items-center mt-4 space-x-3">
+                                                <input id="privacy-check" type="checkbox" class="w-4 h-4 rounded border border-slate-700 bg-[#0f172a] cursor-pointer">
+                                                <span class="text-sm text-slate-300">I have read and agree to the Privacy Policy</span>
+                                        </label>
+
+                                        <div class="mt-4 flex justify-end space-x-3">
+                                                <button class="px-3 py-2 text-xs text-slate-400 hover:text-white">Cancel</button>
+                                                <button id="privacy-accept-btn" class="px-4 py-2 text-xs font-semibold text-white bg-indigo-600 rounded-md disabled:opacity-50" disabled>Accept &amp; Continue</button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <div id="modal-terms" class="modal" aria-hidden="true">
+                <div class="modal-overlay" data-close></div>
+                <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-terms-title">
+                        <button class="modal-close" aria-label="Close">&times;</button>
+                        <div class="modal-body">
+                                <div class="max-w-lg w-full rounded-xl bg-[#0b0f19] text-slate-300 p-6 border border-slate-800/80 shadow-xl">
+                                        <header class="mb-3">
+                                                <h3 id="modal-terms-title" class="text-white text-sm font-semibold">Terms of Service</h3>
+                                                <p class="text-xs text-slate-400">Please review and accept the Terms of Service.</p>
+                                        </header>
+
+                                        <div class="terms-content max-h-56 overflow-y-auto text-sm text-slate-300 leading-relaxed p-3 bg-[#0f172a]/30 rounded-md border border-slate-800/50">
+                                                <p><strong>1. Acceptance of Terms:</strong> By accessing this portfolio website, you agree to be bound by these Terms of Service and all applicable laws.</p>
+                                                <p><strong>2. Use License:</strong> The website is provided for personal, non-commercial viewing. You may not republish or redistribute materials without permission.</p>
+                                                <p><strong>3. Limitations of Liability:</strong> The developer is not liable for any damages arising from the use or inability to use the materials, including loss of data or profits.</p>
+                                        </div>
+
+                                        <label class="flex items-center mt-4 space-x-3">
+                                                <input id="terms-check" type="checkbox" class="w-4 h-4 rounded border border-slate-700 bg-[#0f172a] cursor-pointer">
+                                                <span class="text-sm text-slate-300">I accept the Terms of Service</span>
+                                        </label>
+
+                                        <div class="mt-4 flex justify-end space-x-3">
+                                                <button class="px-3 py-2 text-xs text-slate-400 hover:text-white">Cancel</button>
+                                                <button id="terms-accept-btn" class="px-4 py-2 text-xs font-semibold text-white bg-indigo-600 rounded-md disabled:opacity-50" disabled>Accept &amp; Continue</button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+    <div id="modal-faq" class="modal" aria-hidden="true">
+        <div class="modal-overlay" data-close></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-faq-title">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-body">
+                                <div class="bg-[#0f172a] text-slate-300 p-6 max-w-lg rounded-xl font-sans border border-slate-800 shadow-xl mt-6">
+                                    <h3 class="text-white text-xs font-bold tracking-[0.2em] uppercase mb-4 select-none">Frequently Asked Questions</h3>
+
+                                    <div class="space-y-2">
+                                        <details class="group bg-[#1e293b] rounded-lg border border-slate-700/30 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+                                            <summary class="flex items-center justify-between p-4 text-sm font-medium text-slate-200 cursor-pointer select-none">
+                                                <span>What is your typical project stack?</span>
+                                                <span class="transition duration-300 group-open:-rotate-180 text-slate-400">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                                                </span>
+                                            </summary>
+                                            <p class="px-4 pb-4 text-xs text-slate-400 border-t border-slate-700/20 pt-2 leading-relaxed">
+                                                I specialize in building full-stack applications. My core frontend workflow involves React, Tailwind CSS, and Flutter for mobile, backed by secure backend ecosystems like Firebase, Node.js, or Python.
+                                            </p>
+                                        </details>
+
+                                        <details class="group bg-[#1e293b] rounded-lg border border-slate-700/30 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+                                            <summary class="flex items-center justify-between p-4 text-sm font-medium text-slate-200 cursor-pointer select-none">
+                                                <span>Are you open to freelance or collaboration?</span>
+                                                <span class="transition duration-300 group-open:-rotate-180 text-slate-400">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                                                </span>
+                                            </summary>
+                                            <p class="px-4 pb-4 text-xs text-slate-400 border-t border-slate-700/20 pt-2 leading-relaxed">
+                                                Yes! I love teaming up on innovative tech solutions, whether it's optimizing web systems or designing modern application architectures. Drop me a line via the contact section.
+                                            </p>
+                                        </details>
+                                        
+                                        <details class="group bg-[#1e293b] rounded-lg border border-slate-700/30 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+                                            <summary class="flex items-center justify-between p-4 text-sm font-medium text-slate-200 cursor-pointer select-none">
+                                                <span>What is your typical turnaround time for small projects?</span>
+                                                <span class="transition duration-300 group-open:-rotate-180 text-slate-400">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                                                </span>
+                                            </summary>
+                                            <p class="px-4 pb-4 text-xs text-slate-400 border-t border-slate-700/20 pt-2 leading-relaxed">
+                                                For small, well-scoped projects (landing pages, small UI tweaks), typical turnaround is 3–10 business days depending on requirements and feedback cycles. For accurate timelines, please share project details via the contact form.
+                                            </p>
+                                        </details>
+
+                                        <details class="group bg-[#1e293b] rounded-lg border border-slate-700/30 transition-all duration-300 [&_summary::-webkit-details-marker]:hidden">
+                                            <summary class="flex items-center justify-between p-4 text-sm font-medium text-slate-200 cursor-pointer select-none">
+                                                <span>Do you provide maintenance or support after delivery?</span>
+                                                <span class="transition duration-300 group-open:-rotate-180 text-slate-400">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                                                </span>
+                                            </summary>
+                                            <p class="px-4 pb-4 text-xs text-slate-400 border-t border-slate-700/20 pt-2 leading-relaxed">
+                                                Yes — I offer optional maintenance and support plans for projects, including updates, bug fixes, and small enhancements. We can discuss a support agreement that fits the scope and frequency you need.
+                                            </p>
+                                        </details>
+                                    </div>
+                                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
     <script>
@@ -709,6 +884,97 @@
                 revealEls.forEach(el => revealObserver.observe(el));
             });
         }
+
+        // Footer resource modals
+        (function(){
+            const openLinks = document.querySelectorAll('.resource-link');
+            const body = document.body;
+            function openModal(id){
+                const m = document.getElementById(id);
+                if(!m) return;
+                m.classList.add('show');
+                m.setAttribute('aria-hidden','false');
+                body.classList.add('modal-open');
+                // Ensure accept button state reflects checkbox when modal opens
+                setTimeout(() => {
+                    try {
+                        const chk = m.querySelector('input[type="checkbox"]');
+                        const btn = m.querySelector('button[id$="-accept-btn"]');
+                        if (btn) btn.disabled = !(chk && chk.checked);
+                    } catch (err) { /* noop */ }
+                }, 0);
+            }
+            function closeModal(modal){
+                if(!modal) return;
+                modal.classList.remove('show');
+                modal.setAttribute('aria-hidden','true');
+                body.classList.remove('modal-open');
+            }
+            openLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // Prevent default navigation and stop other click handlers from running
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+                    const id = link.dataset.modal;
+                    // Debug: log which modal is being requested
+                    try { console.debug('Opening modal:', id); } catch (err) {}
+                    openModal(id);
+                });
+            });
+
+            // Close buttons / overlay
+            document.querySelectorAll('.modal').forEach(modal => {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal || e.target.hasAttribute('data-close')) {
+                        closeModal(modal);
+                    }
+                });
+                const btn = modal.querySelector('.modal-close');
+                if (btn) btn.addEventListener('click', () => closeModal(modal));
+            });
+
+            // Close on Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    document.querySelectorAll('.modal.show').forEach(m => closeModal(m));
+                }
+            });
+        })();
+
+        // Enable Accept buttons only when their checkbox is checked
+        (function(){
+            const privacyCheck = document.getElementById('privacy-check');
+            const privacyBtn = document.getElementById('privacy-accept-btn');
+            if (privacyCheck && privacyBtn) {
+                // initialize state
+                privacyBtn.disabled = !privacyCheck.checked;
+                privacyCheck.addEventListener('change', () => {
+                    privacyBtn.disabled = !privacyCheck.checked;
+                });
+                privacyBtn.addEventListener('click', () => {
+                    if (!privacyCheck.checked) return;
+                    const modal = document.getElementById('modal-privacy');
+                    if (modal) { modal.classList.remove('show'); modal.setAttribute('aria-hidden','true'); }
+                    document.body.classList.remove('modal-open');
+                });
+            }
+
+            const termsCheck = document.getElementById('terms-check');
+            const termsBtn = document.getElementById('terms-accept-btn');
+            if (termsCheck && termsBtn) {
+                // initialize state
+                termsBtn.disabled = !termsCheck.checked;
+                termsCheck.addEventListener('change', () => {
+                    termsBtn.disabled = !termsCheck.checked;
+                });
+                termsBtn.addEventListener('click', () => {
+                    if (!termsCheck.checked) return;
+                    const modal = document.getElementById('modal-terms');
+                    if (modal) { modal.classList.remove('show'); modal.setAttribute('aria-hidden','true'); }
+                    document.body.classList.remove('modal-open');
+                });
+            }
+        })();
 
         // Download CV
         const downloadBtn = document.querySelector('.download-btn');
