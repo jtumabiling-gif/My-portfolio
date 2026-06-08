@@ -417,11 +417,5 @@ function createProjectCard(project, index) {
     });
 })();
 
-// Download CV Button Handler
-const downloadBtn = document.querySelector('.download-btn');
-if (downloadBtn) {
-    downloadBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        alert('Your CV will download soon');
-    });
-}
+// Download CV Button: let the anchor's native behavior handle downloads (no interception)
+// The link is set to `assets/CV.png` with a `download` attribute in HTML.

@@ -71,9 +71,10 @@ img { display: block; max-width: 100%; }
 }
 
 section h2 {
-    font-family: 'Playfair Display', Georgia, serif;
+    /* Use the site's main sans font for consistent styling */
+    font-family: 'DM Sans', system-ui, sans-serif;
     font-size: clamp(1.8rem, 4vw, 2.75rem);
-    font-weight: 800;
+    font-weight: 700;
     color: var(--text-primary);
     line-height: 1.15;
     margin-bottom: 1rem;
@@ -126,18 +127,21 @@ section h2 {
         letter-spacing: 0.12em;
         padding: 8px 14px;
         border-radius: 8px;
-        background: linear-gradient(90deg, var(--accent), var(--accent-2));
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        -webkit-text-stroke: 0.4px rgba(255,255,255,0.06);
-        text-shadow: 0 6px 18px rgba(59,130,246,0.10), 0 2px 6px rgba(0,0,0,0.6);
-        box-shadow: 0 8px 28px rgba(59,130,246,0.04) inset;
-        transition: transform 220ms var(--ease), filter 220ms var(--ease);
+        /* Explicit logo color and static appearance */
+        background: none;
+        -webkit-background-clip: initial;
+        background-clip: initial;
+        color: var(--accent);
+        -webkit-text-stroke: 0;
+        text-shadow: none;
+        box-shadow: none;
+        transition: none;
     }
     .logo-text:hover {
-        transform: translateY(-2px) scale(1.02);
-        filter: drop-shadow(0 6px 20px rgba(59,130,246,0.12));
+        /* no hover animation or color change */
+        transform: none;
+        color: var(--accent);
+        filter: none;
     }
 
     @media (max-width: 900px) {
@@ -226,20 +230,31 @@ section h2 {
     border-radius: 100px;
     border: 1px solid var(--accent-border);
 }
+.hero-greeting {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: clamp(1.3rem, 3vw, 2.1rem);
+    font-weight: 700;
+    font-style: normal;
+    color: rgba(255,255,255,0.8);
+    /* increased bottom margin to separate greeting from main title */
+    margin: 8px 0 18px 0;
+    line-height: 1.1;
+}
 .hero h1 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'DM Sans', system-ui, sans-serif;
     font-size: clamp(2.4rem, 6vw, 4.2rem);
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.07;
     color: #fff;
+    margin-top: 8px;
     margin-bottom: 6px;
     animation: fadeUp 0.8s var(--ease) both;
 }
 .hero-subtitle {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'DM Sans', system-ui, sans-serif;
     font-size: clamp(1.3rem, 3vw, 2.1rem);
-    font-weight: 700;
-    font-style: italic;
+    font-weight: 600;
+    font-style: normal;
     color: rgba(255, 255, 255, 0.801);
     margin-bottom: 20px;
     animation: fadeUp 0.8s var(--ease) 0.1s both;

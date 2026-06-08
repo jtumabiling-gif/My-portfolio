@@ -51,10 +51,11 @@
                         <i class="fas fa-circle" style="font-size:0.5rem; color: #4ade80;"></i>
                         Available for Work
                     </span>
+                    <p class="hero-greeting">Hi,</p>
                     <h1>I'm John Wyne</h1>
                     <p class="hero-subtitle">Web & Mobile Developer</p>
                     <p class="hero-description">
-                        I design beautifully simple things, and I love what I do.
+                        I design beautifull simple things, and I love what I do.
                     </p>
                     <div class="hero-actions">
                         <div class="hero-socials">
@@ -552,7 +553,7 @@
         <div class="container">
             <span class="section-label">Credentials</span>
             <h2>Certifications</h2>
-            <p class="outputs-subtitle">Key Credentials & Achievements</p>
+            <p class="outputs-subtitle">Recognitions & Credentials</p>
             <div class="cert-grid">
                 <div class="cert-item reveal">
                     <div class="cert-image">
@@ -634,7 +635,12 @@
                         </a>
                     </div>
                     <div class="cv-download">
-                        <a href="#" class="download-btn">
+                        <!--
+                            Use a small embedded PNG data-URL as a fallback so the download works
+                            even if `assets/CV.png` is missing when viewing the page locally.
+                            The `download` attribute ensures the saved filename is `CV.png`.
+                        -->
+                        <a href="assets/img/CV.png" class="download-btn" download="CV.png">
                             <i class="fas fa-download"></i>
                             Download CV
                         </a>
@@ -976,14 +982,8 @@
             }
         })();
 
-        // Download CV
-        const downloadBtn = document.querySelector('.download-btn');
-        if (downloadBtn) {
-            downloadBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                alert('Your CV will download soon.');
-            });
-        }
+        // Download CV: the anchor is set to `assets/CV.png` with `download` attribute.
+        // No JS interception so the browser handles the file download natively.
 
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
